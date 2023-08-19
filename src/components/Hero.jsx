@@ -100,7 +100,7 @@ const Hero = ({type}) => {
                             I'm a front-end developer and UI/UX designer, adept at bringing startup visions to life in the digital realm. My focus lies in creating sleek web-based applications that harmonize aesthetics with seamless functionality.
                             </div>
                         </Slide>                  
-                        <Slide direction="down"><Button className="mt-5" to="/">See My Resume</Button></Slide>
+                        <Slide direction="down"><Button className="mt-5" to={import.meta.env.VITE_SOCIAL_LINKEDIN} target="_blank" rel="nofollow">See My LinkedIn Profile</Button></Slide>
                     </div>
                 </div>
             </div>            
