@@ -5,7 +5,6 @@ import ContactCard from "../components/ContactCard"
 import { Works } from '../lib/works'
 
 const Home = () => {
-
   return (
     <Layout>
         <div className="max-w-5xl mx-auto space-y-5 md:space-y-40 px-5 lg:px-0">

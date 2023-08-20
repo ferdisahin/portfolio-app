@@ -2,6 +2,8 @@ import {Link} from "react-router-dom"
 
 import {Fade} from "react-awesome-reveal"
 
+import Logo from "../assets/logo.svg"
+
 const Footer = () => {
 
     const Links = [

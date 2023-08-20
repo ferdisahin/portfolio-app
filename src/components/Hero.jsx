@@ -7,6 +7,8 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 
+import Logo from "../assets/logo.svg"
+
 const Hero = ({type}) => {
 
     const [mobileMenu, setMobileMenu] = useState(false)
@@ -60,7 +62,9 @@ const Hero = ({type}) => {
             <div className="bg-primary/30 p-4 rounded relative z-50 backdrop-blur-lg">
                 <div className="grid grid-cols-12 gap-5 items-center">
                     <div className="col-span-8 flex items-center gap-10">
-                        <Link className="text-2xl font-semibold" to="/">FS</Link>
+                        <Link className="text-2xl font-semibold" to="/">
+                            <img src={Logo} className="w-8 h-8" alt="" />
+                        </Link>
                         <nav className="hidden md:flex gap-10">
                             {menus.map((item, index) => (
                                 <NavLink key={index} to={item.slug} className={({isActive, isPending}) => isPending ? 'pending' : isActive ? 'text-white' : 'text-primary hover:text-white transition-all'}>{item.name}</NavLink>
